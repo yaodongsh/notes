@@ -2,7 +2,7 @@
 * Reverse
 	* create 3 nodes. Cur, Prev and Next (used to save Next)
 	>
-	cur=head;
+        cur=head;
 	prev=NULL;
 	next;
 	while (cur != NULL)
@@ -14,3 +14,4 @@
 	}
 
 	return prev;        //this is actual cur before NULL
+
