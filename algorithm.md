@@ -14,3 +14,18 @@
         }
         return prev;        //this is actual cur before NULL
 
+
+##  Tree
+* Middle Order to a vector
+
+        void mi_order (TreeNode* root, vector<int> &vec)
+        {
+            if(root==NULL)
+                return;
+            else
+            {
+                mi_order(root->left, vec);
+                vec.push_back(root->val);
+                mi_order(root->right, vec);
+            }
+        }
